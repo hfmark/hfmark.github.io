@@ -1,0 +1,350 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% for citation hanging indent
+\newlength\listindent
+\setlength\listindent{20pt}
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeAppt}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+      \small#5\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeCite}[6]{
+  \vspace{-2pt}\item 
+    #1 (#2). #3. \textit{#4}, #5, DOI: #6
+  \vspace{-2pt}
+}
+
+\newcommand{\resumeAbs}[5]{
+  \vspace{-2pt}\item 
+    #1 (#2). #3. #4, #5.
+  \vspace{-2pt}
+}
+
+\newcommand{\resumeField}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSmallThing}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}, {#2} & #3\\
+    \end{tabular*}\vspace{-14pt}
+}
+
+\newcommand{\resumeSmallerThing}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2\\
+    \end{tabular*}\vspace{-14pt}
+}
+
+\newcommand{\resumeComms}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+      \small#3, \small#4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\LARGE \scshape Hannah F. Mark} \\ \vspace{1pt}
+    \small Washington University in St Louis $|$ Dept. of Earth and Planetary Sciences \\
+    \small \href{mailto:hmark@wustl.edu}{\underline{hmark@wustl.edu}} $|$
+    \href{https://hfmark.github.io}{\underline{https://hfmark.github.io}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {PhD Marine Geophysics}{2019}
+      {MIT-WHOI Joint Program}{Cambridge and Woods Hole, MA}
+    \resumeSubheading
+      {BA Physics $|$ BS Geophysical Sciences}{2014}
+      {University of Chicago}{Chicago, IL}
+  \resumeSubHeadingListEnd
+
+
+%-----------APPOINTMENTS--------
+\section{Appointments}
+  \resumeSubHeadingListStart
+
+    \resumeAppt
+      {Fossett Postdoctoral Fellow}{Sept 2019 -- Present}
+      {Washington University in St. Louis}{St. Louis, MO}
+      {Co-advisors Prof. Doug Wiens and Prof. Phil Skemer}
+
+    \resumeAppt
+      {Graduate Research Assistant}{2015-16}
+      {Woods Hole Oceanographic Institution}{Woods Hole, MA}
+      {Co-advisors Dr. Dan Lizarralde and Prof. Mark Behn}
+
+    \resumeAppt
+      {Summer Student Fellow}{2013}
+      {Woods Hole Oceanographic Institution}{Woods Hole, MA}
+      {Advisor Dr. Dan Lizarralde}
+
+    \resumeAppt
+      {Undergraduate Research Assistant}{2011-14}
+      {University of Chicago}{Chicago, IL}
+      {Advisor Dr. Dion Heinz, Laboratory for Mineral Physics}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-------
+\section{Publications}
+    \resumeSubHeadingListStart
+    \parshape 2 0cm \linewidth \listindent \dimexpr\linewidth-\listindent\relax
+    \resumeCite
+    {Shinevar, W. J., \textbf{H. F. Mark}, F. Clerc, E. A. Codillo, J. Gong, J. A. Olive, S. M. Brown, P. T. Smalls, Y. Liao, V. Le Roux, \& M. D. Behn}{2019}{Causes of oceanic crustal thickness oscillations along a 74-Myr Mid-Atlantic Ridge flow line}{Geochemistry, Geophysics, Geosystems}{20}{10.1029/2019GC008711}
+    \resumeCite
+    {\textbf{Mark, H. F.}, D. Lizarralde, J. A. Collins, N. C. Miller, G. Hirth, J. B. Gaherty, \& R. L. Evans}{2019}{Azimuthal seismic anisotropy of 70 Ma Pacific-plate upper mantle}{Journal of Geophysical Research: Solid Earth}{124}{10.1029/2018JB016451}
+    \resumeCite
+    {\textbf{Mark, H. F.}, M. D. Behn, J. A. Olive, \& Y. Liu}{2018}{Controls on mid-ocean ridge normal fault seismicity across spreading rates from rate-and-state friction models}{Journal of Geophysical Research: Solid Earth}{123}{10.1029/2018JB015545}
+    \resumeSubHeadingListEnd
+
+
+%-----------AWARDS-------------
+\section{Awards}
+    \resumeSubHeadingListStart
+    \resumeSmallThing
+      {Fossett Postdoctoral Fellowship}{Washington University in St. Louis}{2019}
+    \resumeSmallThing
+      {AGU Outstanding Student Paper Award (OSPA)}{Tectonophysics section}{2019}
+    \resumeSmallThing
+      {AGU OSPA}{Tectonophysics section}{2016}
+    \resumeSmallThing
+      {GeoPrisms OSPA}{honorable mention}{2016}
+    \resumeSmallerThing
+      {National Science Foundation Graduate Research Fellowship}{2015}
+    \resumeSmallThing
+      {Walter A. Rosenblith Presidential Fellowship}{Massachusetts Institute of Technology}{2014}
+    \resumeSmallThing
+      {Phi Beta Kappa}{Beta of Illinois}{2014}
+    \resumeSmallThing
+      {John Crerar Science Writing Prize}{University of Chicago}{2013}
+    \resumeSubHeadingListEnd
+
+
+%-----------ABSTRACTS---------
+\section{Conference Abstracts}
+    \resumeSubHeadingListStart
+    \parshape 2 0cm \linewidth \listindent \dimexpr\linewidth-\listindent\relax
+    \resumeAbs
+    {\textbf{Mark, H. F.}, D. Wiens, M. Pourpoint, M. B. Magnani, E. R. Ivins, A. Richter, S. E. Barrientos}{2020}{Seismic structure and the extent of the slab window beneath the Northern and Southern Patagonian Icefields}{AGU Fall Meeting}{virtual (poster)}
+    \resumeAbs
+    {\textbf{Mark, H. F.}, J. A. Collins, D. Lizarralde, G. Hirth, J. B. Gaherty, \& R. L. Evans}{2019}{The depth, sharpness, and strength of the G discontinuity from S-to-p receiver functions at the NoMelt site in the central Pacific}{AGU Fall Meeting}{San Francisco, CA}
+    \resumeAbs
+    {\textbf{Mark, H. F.}, J. A. Collins, D. Lizarralde, G. Hirth, J. B. Gaherty, \& R. L. Evans}{2018}{S-to-p receiver functions for the central Pacific from NoMelt}{AGU Fall Meeting}{Washington, D.C.}
+    \resumeAbs
+    {Russell, J.B., \textbf{H. F. Mark}, J. B. Gaherty, D. Lizarralde, P. P. Lin, J. A. Collins, G. Hirth, R. Evans}{2018}{Comprehensive in situ constraints on LPO fabric of fast-spreading oceanic lithosphere from seismic anisotropy}{AGU Fall Meeting}{Washington, D. C.}
+    \resumeAbs
+    {Shinevar, W. J., \textbf{H. F. Mark}, F. Clerc, E. Codillo, J. A. Olive, J. Gong, S. M. Brown, P. T. Smalls, Y. Liao, V. Le Roux, M. D. Behn}{2018}{Temporal variability of seafloor spreading processes documented along an 80-Myr geophysical transect across the Mid-Atlantic Ridge}{AGU Fall Meeting}{Washington, D. C.}
+    \resumeAbs
+    {Gaherty, J. B., J. B. Russell, \textbf{H. F. Mark}, P. P. Lin, E. K. Sarafian, Z. Ma, D. Lizarralde, J. A. Collins, G. Hirth, R. L. Evans, C. A. Dalton}{2018}{A comprehensive portrait of the central Pacific lithosphere-asthenosphere system from NoMelt seafloor geophysical observations}{AGU Fall Meeting}{Washington, D. C.}
+    \resumeAbs
+    {\textbf{Mark, H. F.}, M. D. Behn, Y. Liu, J. A. Olive}{2017}{Geometric and thermal controls on normal fault seismicity}{AGU Fall Meeting}{New Orleans, LA (invited)}
+    \resumeAbs
+    {\textbf{Mark, H. F.}, D. Lizarralde, J. A. Collins, N. C. Miller, G. Hirth, J. B. Gaherty, R. L. Evans}{2017}{Seismic anisotropy of 70 Ma Pacific-plate upper mantle}{AGU Fall Meeting}{New Orleans, LA}
+    \resumeAbs
+    {\textbf{Mark, H. F.}, M. D. Behn, Y. Liu, J. A. Olive}{2017}{Seismic coupling at divergent plate boundaries from rate-and-state friction}{GeoPrisms Theoretical and Experimental Institute on Rift Initiation and Evolution}{Albuquerque, NM (invited)}
+    \resumeAbs
+    {\textbf{Mark, H. F.}, M. D. Behn, Y. Liu, J. A. Olive}{2016}{Seismic coupling at divergent plate boundaries from rate-and-state friction}{AGU Fall Meeting}{San Francisco, CA}
+    \resumeAbs
+    {\textbf{Mark, H. F.}, M. D. Behn, Y. Liu, J. A. Olive}{2016}{Rate-and-state friction models of seismic cycles on oceanic normal faults}{Gordon Research Conference on Rock Deformation}{Andover, NH (poster)}
+    \resumeAbs
+    {\textbf{Mark, H. F.}, D. Lizarralde, J. B. Gaherty, J. A. Collins, G. Hirth, R. L. Evans, P. P. Lin}{2016}{Seismic anisotropy in the Pacific upper mantle}{Seismology Student Workshop}{Lamont Doherty Earth Observatory}
+    \resumeAbs
+    {\textbf{Mark, H. F.}, D. Lizarralde, J. B. Gaherty, J. A. Collins, G. Hirth, R. L. Evans}{2014}{Pacific upper mantle seismic anisotropy from the active-source component of the NoMelt experiment}{AGU Fall Meeting}{San Francisco, CA (poster)}
+    \resumeAbs
+    {Heinz, D. L., \textbf{H. F. Mark}}{2012}{The Effect of Wavelength-Dependent Emissivity on the Melting Temperature of Iron from Shock Wave Measurements}{AGU Fall Meeting}{San Francisco, CA (poster)}
+    \resumeSubHeadingListEnd
+
+
+%-----------SEMINARS-----------
+\section{Invited Seminars}
+    \resumeSubHeadingListStart
+    \resumeSmallThing
+      {University of Illinois Urbana-Champaign}{Brown bag seminar}{2019}
+    \resumeSmallThing
+      {Lamont-Doherty Earth Observatory}{MGG/SGT seminar}{2018}
+    \resumeSmallThing
+      {WHOI}{Interdisciplinary Biology Seminar Series on Acoustics}{2018}
+    \resumeSubHeadingListEnd
+
+
+%-----------FIELD EXPERIENCE---
+\section{Field Experience}
+    \resumeSubHeadingListStart
+    \resumeField
+      {R/V \textit{Marcus G. Langseth}, MGL2003}{2020}
+      {Active-source reflection and refraction survey in the Central Aleutians}
+    \resumeField
+      {R/V \textit{Neil Armstrong}, AR23-02}{2017}
+      {Collecting underway data along a ridge flowline in the Atlantic}
+    \resumeField
+      {R/V \textit{Neil Armstrong}, AR05}{2016}
+      {Scientific validation cruise}
+    \resumeField
+      {ENAM land seismic experiment, North Carolina}{2015}
+      {RT-125 deployment and recovery for active-source seismic lines on the Eastern North American Margin}
+    \resumeField
+      {PRIDE SeisORZ seismic experiment, Botswana}{2014}
+      {RT-125 deployment and recovery for an active-source seismic line across the Okavango Delta}
+    \resumeSubHeadingListEnd
+
+
+%-----------SERVICE------------
+\section{Service}
+    \resumeSubHeadingListStart
+    \resumeField
+      {Peer reviewer}{2019-present}
+      {JGR: Solid Earth, Nature Geoscience, Geophysical Research Letters}
+    \resumeSmallThing
+      {Steering Committee}{500 Women Scientists of Cape Cod}{2018-19}
+    \resumeSmallThing
+      {Librarian}{MIT-WHOI Joint Program Farrington Collection}{2015-19}
+    \resumeSmallThing
+      {Blog manager}{MIT-WHOI Broader Impacts group}{2017-18}
+    \resumeSmallThing
+      {Web administrator}{Graduate Women at MIT Mentoring Program}{2015-16}
+    \resumeSmallThing
+      {Coordinator}{WHOI Summer Math Review}{2014-16}
+    \resumeSubHeadingListEnd
+
+
+%-----------COMM/OUTREACH-----
+\section{Selected Communication and Outreach}
+    \resumeSubHeadingListStart
+    \resumeComms
+    {Contributing writer at geobites.org}{2020-present}
+    {Blogging}{general audience summaries of new research}
+    \resumeComms
+    {How is the seafloor made?}{2018}
+    {Magazine article}{\textit{Oceanus} Vol. 53, No. 2}
+    \resumeComms
+    {(Way) under the sea: Imaging the rocks beneath the deep ocean}{2017}
+    {Public talk}{Science Made Public lecture series, Woods Hole, MA}
+    \resumeComms
+    {The lithosphere-asthenosphere boundary: What it is, where it is, and why you should care}{2017}
+    {Public talk}{Woods Hole Public Library, Woods Hole, MA}
+    \resumeComms
+    {Under-under the sea: Imaging the rocks beneath the deep ocean}{2016}
+    {Public talk}{Woods Hole Public Library, Woods Hole, MA}
+    \resumeSubHeadingListEnd
+
+
+%-----------TEACHING EXPERIENCE----------
+\section{Teaching Experience}
+  \resumeSubHeadingListStart
+    \resumeSmallThing
+      {Kaufman Teaching Certificate}{MIT Teaching and Learning Lab}{2018}
+    \resumeSmallThing
+      {Classroom assistant}{WHOI Software Carpentries workshop}{2018}
+    \resumeSmallThing
+      {Lecturer}{WHOI Summer Math Review}{2017}
+    \resumeSmallThing
+      {Co-Instructor, MS-3221: Oceanography}{Massachusetts Maritime Academy}{2017}
+    \resumeSmallThing
+      {TA, MIT 12.170: Elements of Modern Oceanography}{MIT-WHOI Joint Program}{2016}
+    \resumeSmallThing
+      {Lecturer}{WHOI Summer Math Review}{2016}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
+

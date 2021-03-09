@@ -30,14 +30,13 @@
 % \usepackage[default]{sourcesanspro}
 
 % serif
-% \usepackage{CormorantGaramond}
+\usepackage{CormorantGaramond}
 % \usepackage{charter}
 
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 %\fancyfoot[L]{\small\thepage}
-\fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -57,7 +56,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{2pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -89,13 +88,19 @@
 \newcommand{\resumeCite}[6]{
   \vspace{-2pt}\item 
     #1 (#2). #3. \textit{#4}, #5, DOI: #6
-  \vspace{-2pt}
+  \vspace{-5pt}
+}
+
+\newcommand{\resumeManu}[4]{
+  \vspace{-2pt}\item 
+    #1 (#2). #3. #4
+  \vspace{-5pt}
 }
 
 \newcommand{\resumeAbs}[5]{
   \vspace{-2pt}\item 
     #1 (#2). #3. #4, #5.
-  \vspace{-2pt}
+  \vspace{-5pt}
 }
 
 \newcommand{\resumeField}[3]{
@@ -140,7 +145,7 @@
 \begin{document}
 
 \begin{center}
-    \textbf{\LARGE \scshape Hannah F. Mark} \\ \vspace{1pt}
+    \textbf{\LARGE Hannah F. Mark} \\ \vspace{1pt}
     \small Washington University in St Louis $|$ Dept. of Earth and Planetary Sciences \\
     \small \href{mailto:hmark@wustl.edu}{\underline{hmark@wustl.edu}} $|$
     \href{https://hfmark.github.io}{\underline{https://hfmark.github.io}}
@@ -190,6 +195,8 @@
 \section{Publications}
     \resumeSubHeadingListStart
     \parshape 2 0cm \linewidth \listindent \dimexpr\linewidth-\listindent\relax
+    \resumeManu
+    {\textbf{Mark, H. F.}, J. A. Collins, D. Lizarralde, G. Hirth, J. B. Gaherty, R. L. Evans, \& M. D. Behn}{2021}{Constraints on the depth, thickness, and strength of the G discontinuity in the central Pacific from S receiver functions}{\textit{Journal of Geophysical Research: Solid Earth} (Accepted)}
     \resumeCite
     {Shinevar, W. J., \textbf{H. F. Mark}, F. Clerc, E. A. Codillo, J. Gong, J. A. Olive, S. M. Brown, P. T. Smalls, Y. Liao, V. Le Roux, \& M. D. Behn}{2019}{Causes of oceanic crustal thickness oscillations along a 74-Myr Mid-Atlantic Ridge flow line}{Geochemistry, Geophysics, Geosystems}{20}{10.1029/2019GC008711}
     \resumeCite
@@ -198,6 +205,11 @@
     {\textbf{Mark, H. F.}, M. D. Behn, J. A. Olive, \& Y. Liu}{2018}{Controls on mid-ocean ridge normal fault seismicity across spreading rates from rate-and-state friction models}{Journal of Geophysical Research: Solid Earth}{123}{10.1029/2018JB015545}
     \resumeSubHeadingListEnd
 
+%-----------MANUSCRIPTS-------
+%\section{Manuscripts in progress}
+%   \resumeSubHeadingListStart
+%   \parshape 2 0cm \linewidth \listindent \dimexpr\linewidth-\listindent\relax
+%    \resumeSubHeadingListEnd
 
 %-----------AWARDS-------------
 \section{Awards}
@@ -256,18 +268,6 @@
     \resumeSubHeadingListEnd
 
 
-%-----------SEMINARS-----------
-\section{Invited Seminars}
-    \resumeSubHeadingListStart
-    \resumeSmallThing
-      {University of Illinois Urbana-Champaign}{Brown bag seminar}{2019}
-    \resumeSmallThing
-      {Lamont-Doherty Earth Observatory}{MGG/SGT seminar}{2018}
-    \resumeSmallThing
-      {WHOI}{Interdisciplinary Biology Seminar Series on Acoustics}{2018}
-    \resumeSubHeadingListEnd
-
-
 %-----------FIELD EXPERIENCE---
 \section{Field Experience}
     \resumeSubHeadingListStart
@@ -286,6 +286,18 @@
     \resumeField
       {PRIDE SeisORZ seismic experiment, Botswana}{2014}
       {RT-125 deployment and recovery for an active-source seismic line across the Okavango Delta}
+    \resumeSubHeadingListEnd
+
+
+%-----------SEMINARS-----------
+\section{Invited Seminars}
+    \resumeSubHeadingListStart
+    \resumeSmallThing
+      {University of Illinois Urbana-Champaign}{Brown bag seminar}{2019}
+    \resumeSmallThing
+      {Lamont-Doherty Earth Observatory}{MGG/SGT seminar}{2018}
+    \resumeSmallThing
+      {WHOI}{Interdisciplinary Biology Seminar Series on Acoustics}{2018}
     \resumeSubHeadingListEnd
 
 
@@ -308,6 +320,24 @@
     \resumeSubHeadingListEnd
 
 
+%-----------TEACHING EXPERIENCE----------
+\section{Teaching Experience}
+  \resumeSubHeadingListStart
+    \resumeSmallThing
+      {Kaufman Teaching Certificate}{MIT Teaching and Learning Lab}{2018}
+    \resumeSmallThing
+      {Classroom assistant}{WHOI Software Carpentries workshop}{2018}
+    \resumeSmallThing
+      {Lecturer}{WHOI Summer Math Review}{2017}
+    \resumeSmallThing
+      {Co-Instructor, MS-3221: Oceanography}{Massachusetts Maritime Academy}{2017}
+    \resumeSmallThing
+      {TA, MIT 12.170: Elements of Modern Oceanography}{MIT-WHOI Joint Program}{2016}
+    \resumeSmallThing
+      {Lecturer}{WHOI Summer Math Review}{2016}
+  \resumeSubHeadingListEnd
+
+
 %-----------COMM/OUTREACH-----
 \section{Selected Communication and Outreach}
     \resumeSubHeadingListStart
@@ -327,24 +357,6 @@
     {Under-under the sea: Imaging the rocks beneath the deep ocean}{2016}
     {Public talk}{Woods Hole Public Library, Woods Hole, MA}
     \resumeSubHeadingListEnd
-
-
-%-----------TEACHING EXPERIENCE----------
-\section{Teaching Experience}
-  \resumeSubHeadingListStart
-    \resumeSmallThing
-      {Kaufman Teaching Certificate}{MIT Teaching and Learning Lab}{2018}
-    \resumeSmallThing
-      {Classroom assistant}{WHOI Software Carpentries workshop}{2018}
-    \resumeSmallThing
-      {Lecturer}{WHOI Summer Math Review}{2017}
-    \resumeSmallThing
-      {Co-Instructor, MS-3221: Oceanography}{Massachusetts Maritime Academy}{2017}
-    \resumeSmallThing
-      {TA, MIT 12.170: Elements of Modern Oceanography}{MIT-WHOI Joint Program}{2016}
-    \resumeSmallThing
-      {Lecturer}{WHOI Summer Math Review}{2016}
-  \resumeSubHeadingListEnd
 
 
 %-------------------------------------------

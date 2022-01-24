@@ -76,18 +76,24 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeAppt}[5]{
+\newcommand{\resumeAppt}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \small#3 & \small #4 \\
-      \small#5\\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeCite}[6]{
   \vspace{-2pt}\item 
     #1 (#2). #3. \textit{#4}, #5, DOI: #6
+  \vspace{-5pt}
+}
+
+
+\newcommand{\resumeDataset}[4]{
+  \vspace{-2pt}\item 
+    #1 (#2). #3. DOI: #4
   \vspace{-5pt}
 }
 
@@ -146,9 +152,10 @@
 
 \begin{center}
     \textbf{\LARGE Hannah F. Mark} \\ \vspace{1pt}
-    \small Woods Hole Oceanographic Institution $|$ Dept. of Geology and Geophysics \\
-    \small \href{mailto:hmark@whoi.edu}{\underline{hmark@whoi.edu}} $|$
-    \href{https://hfmark.github.io}{\underline{https://hfmark.github.io}}
+    \small Woods Hole Oceanographic Institution \\
+    \small Dept. of Geology and Geophysics \\
+    \small \href{mailto:hmark@whoi.edu}{hmark@whoi.edu} $|$
+    \href{https://hfmark.github.io}{https://hfmark.github.io}
 \end{center}
 
 
@@ -157,10 +164,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {PhD Marine Geophysics}{2019}
-      {MIT-WHOI Joint Program}{Cambridge and Woods Hole, MA}
+      {MIT-WHOI Joint Program}{}%{Cambridge and Woods Hole, MA}
     \resumeSubheading
       {BA Physics $|$ BS Geophysical Sciences}{2014}
-      {University of Chicago}{Chicago, IL}
+      {University of Chicago}{}%{Chicago, IL}
   \resumeSubHeadingListEnd
 
 
@@ -170,28 +177,23 @@
 
     \resumeAppt
       {Postdoctoral Investigator}{Sept 2021 -- present}
-      {Woods Hole Oceanographic Institution}{Woods Hole, MA}
-      {Advisor Dr. Dan Lizarralde}
+      {Woods Hole Oceanographic Institution}{}%{Woods Hole, MA}
+%     {Advisor Dr. Dan Lizarralde}
 
     \resumeAppt
       {Fossett Postdoctoral Fellow}{Sept 2019 -- Aug 2021}
-      {Washington University in St. Louis}{St. Louis, MO}
-      {Co-advisors Prof. Doug Wiens and Prof. Phil Skemer}
-
-%    \resumeAppt
-%      {Graduate Research Assistant}{2015-16}
-%      {Woods Hole Oceanographic Institution}{Woods Hole, MA}
-%      {Co-advisors Dr. Dan Lizarralde and Prof. Mark Behn}
+      {Washington University in St. Louis}{}%{St. Louis, MO}
+%     {Co-advisors Prof. Doug Wiens and Prof. Phil Skemer}
 
     \resumeAppt
       {Summer Student Fellow}{2013}
-      {Woods Hole Oceanographic Institution}{Woods Hole, MA}
-      {Advisor Dr. Dan Lizarralde}
+      {Woods Hole Oceanographic Institution}{}%{Woods Hole, MA}
+%     {Advisor Dr. Dan Lizarralde}
 
     \resumeAppt
       {Undergraduate Research Assistant}{2011-14}
-      {University of Chicago}{Chicago, IL}
-      {Advisor Dr. Dion Heinz, Laboratory for Mineral Physics}
+      {University of Chicago}{}%{Chicago, IL}
+%     {Advisor Dr. Dion Heinz, Laboratory for Mineral Physics}
 
   \resumeSubHeadingListEnd
 
@@ -201,6 +203,8 @@
     \resumeSubHeadingListStart
     \parshape 2 0cm \linewidth \listindent \dimexpr\linewidth-\listindent\relax
     \resumeCite
+    {\textbf{Mark, H. F.}, D. A. Wiens, E. R. Ivins, A. Richter, W. Ben Mansour, M. B. Magnani, E. Marderwald, R. Adaros, \& S. Barrientos}{2022}{Lithospheric erosion in the Patagonian slab window, and implications for glacial isostasy}{Geophysical Research Letters}{49}{10.1029/2021GL096863}
+    \resumeCite
     {\textbf{Mark, H. F.}, J. A. Collins, D. Lizarralde, G. Hirth, J. B. Gaherty, R. L. Evans, \& M. D. Behn}{2021}{Constraints on the depth, thickness, and strength of the G discontinuity in the central Pacific from S receiver functions}{Journal of Geophysical Research: Solid Earth}{126}{10.1029/2019JB019256}
     \resumeCite
     {Shinevar, W. J., \textbf{H. F. Mark}, F. Clerc, E. A. Codillo, J. Gong, J. A. Olive, S. M. Brown, P. T. Smalls, Y. Liao, V. Le Roux, \& M. D. Behn}{2019}{Causes of oceanic crustal thickness oscillations along a 74-Myr Mid-Atlantic Ridge flow line}{Geochemistry, Geophysics, Geosystems}{20}{10.1029/2019GC008711}
@@ -208,6 +212,16 @@
     {\textbf{Mark, H. F.}, D. Lizarralde, J. A. Collins, N. C. Miller, G. Hirth, J. B. Gaherty, \& R. L. Evans}{2019}{Azimuthal seismic anisotropy of 70 Ma Pacific-plate upper mantle}{Journal of Geophysical Research: Solid Earth}{124}{10.1029/2018JB016451}
     \resumeCite
     {\textbf{Mark, H. F.}, M. D. Behn, J. A. Olive, \& Y. Liu}{2018}{Controls on mid-ocean ridge normal fault seismicity across spreading rates from rate-and-state friction models}{Journal of Geophysical Research: Solid Earth}{123}{10.1029/2018JB015545}
+    \resumeSubHeadingListEnd
+
+%-----------DATASETS----------
+\section{Data Products}
+   \resumeSubHeadingListStart
+   \parshape 2 0cm \linewidth \listindent \dimexpr\linewidth-\listindent\relax
+   \resumeDataset
+   {\textbf{Mark, H. F.}, D. A. Wiens, E. R. Ivins, A. Richter, W. Ben Mansour, M. B. Magnani, E. Marderwald, R. Adaros, \& S. Barrientos}{2021}{Velocity and viscosity models for southern Patagonia, from the GUANACO experiment}{10.5281/zenodo.5794167}
+   \resumeDataset
+   {\textbf{Mark, H. F.}, D. A. Wiens, E. R. Ivins, A. Richter, W. Ben Mansour, M. B. Magnani, E. Marderwald, R. Adaros, \& S. Barrientos}{2021}{Earthquake records and ambient noise cross correlations from ENAP Magallanes seismographs, Jan 2019-Mar 2020}{10.5281/zenodo.5508198}
     \resumeSubHeadingListEnd
 
 %-----------MANUSCRIPTS-------
@@ -242,6 +256,12 @@
 \section{Conference Abstracts}
     \resumeSubHeadingListStart
     \parshape 2 0cm \linewidth \listindent \dimexpr\linewidth-\listindent\relax
+    \resumeAbs
+    {\textbf{Mark, H. F.}, D. Wiens, W. Ben Mansour, E. R. Ivins, A. Richter, M. B. Magnani, E. Marderwald, R. Adaros, S. E. Barrientos}{2021}{Thermal erosion of the lithosphere in the Patagonian slab window and implications for glacial isostatic adjustment}{AGU Fall Meeting}{New Orleans, LA}
+    \resumeAbs
+    {\textbf{Mark, H. F.}, D. Lizarralde, D. Shillington, V. Cortes Rivas, J. D. Estep}{2021}{Crustal structure along-strike in the Andreanof segment of the Aleutian Arc from wide-angle seismic refraction data}{AGU Fall Meeting}{virtual poster}
+    \resumeAbs
+    {D. Wiens, W. Ben Mansour, \textbf{H. F. Mark}, P. Shore, A. Richter, S. E. Barrientos}{2021}{Geodynamics of the Patagonian Slab Window Constrained by Shear Wave Splitting and Seismic Imaging}{AGU Fall Meeting}{New Orleans, LA}
     \resumeAbs
     {\textbf{Mark, H. F.}, D. Wiens, D. Lizarralde}{2021}{Estimating bend-faulting and mantle hydration at the Marianas trench from seismic anisotropy}{EGU General Assembly}{virtual}
     \resumeAbs
@@ -304,6 +324,8 @@
 \section{Invited Seminars}
     \resumeSubHeadingListStart
     \resumeSmallThing
+      {University of Hawai'i Manoa}{Earth Sciences Department seminar}{2021}
+    \resumeSmallThing
       {University of Illinois Urbana-Champaign}{Brown bag seminar}{2019}
     \resumeSmallThing
       {Lamont-Doherty Earth Observatory}{MGG/SGT seminar}{2018}
@@ -315,21 +337,25 @@
 %-----------SERVICE------------
 \section{Service}
     \resumeSubHeadingListStart
+    \resumeField
+      {Peer reviewer}{}  %{2019-present}
+      {JGR: Solid Earth, Nature Geoscience, Geophysical Research Letters, Science Advances}
     \resumeSmallThing
-      {Session Convener}{AGU Fall Meeting, Session EP047}{2021}
+      {Co-chair, Standards and Copy Editing}{\textit{Seismica} journal}{2022-present}
+    \resumeSmallThing
+      {WHOI Postdoc Association department representative}{Secretary and WCC rep}{2022-present}
+    \resumeSmallThing
+      {Session Convener}{AGU Fall Meeting, Session EP15}{2021}
     \resumeSmallThing
       {URGE Pod Leader}{Wash U EPS Department pod}{2021}
-    \resumeField
-      {Peer reviewer}{2019-present}
-      {JGR: Solid Earth, Nature Geoscience, Geophysical Research Letters}
     \resumeSmallThing
       {Steering Committee}{500 Women Scientists of Cape Cod}{2018-19}
     \resumeSmallThing
       {Librarian}{MIT-WHOI Joint Program Farrington Collection}{2015-19}
-    \resumeSmallThing
-      {Blog manager}{MIT-WHOI Broader Impacts group}{2017-18}
-    \resumeSmallThing
-      {Web administrator}{Graduate Women at MIT Mentoring Program}{2015-16}
+%    \resumeSmallThing
+%      {Blog manager}{MIT-WHOI Broader Impacts group}{2017-18}
+%    \resumeSmallThing
+%      {Web administrator}{Graduate Women at MIT Mentoring Program}{2015-16}
     \resumeSmallThing
       {Coordinator}{WHOI Summer Math Review}{2014-16}
     \resumeSubHeadingListEnd
